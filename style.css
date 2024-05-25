@@ -2,14 +2,28 @@
 
 @import 'modern-normalize/modern-normalize.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 body {
   display: grid;
   grid-template-columns: 195px repeat(3, 570px);
   grid-template-rows: 190px 300px 300px 300px;
 }
 
+a, h1, h2, h3, h4, h5, button {
+  font-family: Inconsolata, 'Courier New', Courier, monospace;
+}
+
 a {
   text-decoration: none;
+}
+
+i {
+  display: inline-block;
+}
+
+p {
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sidebar {
@@ -18,12 +32,12 @@ a {
   grid-row-start: 1;
   grid-row-end: 5;
   background-color: #5867b4;
-  
-  
 }
 
 #sidebar a {
   color: #EAFFE6;
+  display: block;
+  letter-spacing: -1px;
 }
 
 #sidebar a:hover {
@@ -31,7 +45,7 @@ a {
 }
 
 #sidebar i {
-  display: block;
+
   padding: 1.6rem;
 }
 
